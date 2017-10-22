@@ -1,0 +1,17 @@
+.vier-gewinnt table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  border-radius: 18px;
+  border-color: blue;
+
+}
+
+.vier-gewinnt td {
+  border: 1px solid black;
+  height: 5em;
+  position: relative;
+  text-align: center;
+  width: 5em;
+  border-radius: 18px;
+
+ }
