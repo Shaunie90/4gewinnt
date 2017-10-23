@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-Gewinnt</title>
+          <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+
+    <!-- Sichtbarer Dokumentinhalt im body -->
+    <p>Hier entsteht bald ein 4-Gewinnt Spiel.
+
+<div id="div_box">
+
+  <div id="div_box_innen_oben">
+      <div id="div_box_text">
+        Spieler X:&nbsp;<span id="spieler1"></span>
+      </div>
+      <div id="div_box_text">
+        Spieler O:&nbsp;<span id="spieler2"></span>
+      </div>
+    </div>
+
+    <div id="div_box_innen_unten">
+        <div id="div_box_innen_unten_Spielfeldrahmen">
+          <div id="div_box_innen_unten_Spielfeldrahmen_Spielfeld">
+            <div>
+              <table>
+               <tr>
+
+                <td><div onlick="setSymbol(0)" id="kreis00" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis01" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis02" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis03" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis04" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis05" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis06" class="vier-gewinnt"></td>
+              </tr>
+
+              <tr>
+                <td><div onlick="setSymbol(0)" id="kreis10" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis11" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis12" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis13" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis14" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis15" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis16" class="vier-gewinnt"></td>
+              </tr>
+
+              <tr>
+                <td><div onlick="setSymbol(0)" id="kreis20" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis21" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis22" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis23" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis24" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis25" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis26" class="vier-gewinnt"></td>
+              </tr>
+
+              <tr>
+                <td><div onlick="setSymbol(0)" id="kreis30" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis31" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis32" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis33" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis34" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis35" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis36" class="vier-gewinnt"></td>
+              </tr>
+
+              <tr>
+                <td><div onlick="setSymbol(0)" id="kreis40" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis41" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis42" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis43" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis44" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis45" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis46" class="vier-gewinnt"></td>
+              </tr>
+
+
+
+                <tr>
+                <td><div onlick="setSymbol(0)" id="kreis50" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(1)" id="kreis51" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(2)" id="kreis52" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(3)" id="kreis53" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(4)" id="kreis54" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(5)" id="kreis55" class="vier-gewinnt"></td>
+                <td><div onlick="setSymbol(6)" id="kreis56" class="vier-gewinnt"></td>
+                </tr>
+
+            </table>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div id="div_box_innen_unten_leiste">
+          <div id="div_box_text"><span id="winner"></span></div>
+          <div id="div_box_text"><span id="restart"></span></div>
+          <div id="div_box_text_weristdran">Am Zug:&nbsp;<span id="weristdran"></span></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+    <script type="text/javascript" src="lib/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
