@@ -110,3 +110,20 @@ a:link {
 	display: flex;
  	justify-content: center;
 }
+
+#kreisrot{
+	height: 30px;
+	position: relative;
+	text-align: center;
+	width: 30px;
+	border-radius: 18px;
+	background-color: red;
+}
+#kreisgelb{
+	height: 30px;
+	position: relative;
+	text-align: center;
+	width: 30px;
+	border-radius: 18px;
+	background-color: yellow;
+}
