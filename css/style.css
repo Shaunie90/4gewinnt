@@ -1,6 +1,6 @@
 
+.vier-gewinnt table {
 
-.vier-gewinnt tr  {
   border: 2px solid black;
   border-collapse: collapse;
   border-radius: 10px;
@@ -20,6 +20,7 @@
   border-radius: 18px;
   background-color: white;
  }
+
 
 
 
@@ -108,4 +109,21 @@ a:link {
 	margin-top: 13px;
 	display: flex;
  	justify-content: center;
+}
+
+#kreisrot{
+	height: 30px;
+	position: relative;
+	text-align: center;
+	width: 30px;
+	border-radius: 18px;
+	background-color: red;
+}
+#kreisgelb{
+	height: 30px;
+	position: relative;
+	text-align: center;
+	width: 30px;
+	border-radius: 18px;
+	background-color: yellow;
 }
