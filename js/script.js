@@ -37,8 +37,14 @@ var player_two = users[1];
 //var feld = []
 
 // Namen setzen von Spieler "Rot" & "Gelb" - muss mit Login verknüpft werden(?)
-document.getElementById("spieler1").innerHTML = player_one;
-document.getElementById("spieler2").innerHTML = player_two;
+
+function submit(){
+  var userName = document.getElementById("user").value;
+  document.getElementById("spieler1").innerHTML=userName;
+ 
+}
+//document.getElementById("spieler1").innerHTML=player_one;
+//document.getElementById("spieler2").innerHTML = player_two;
 
 //Namen setzen unten bei "Am Zug" - muss ebenfalls mit Login verknüpft werden
 currentPlayer = player_one;
